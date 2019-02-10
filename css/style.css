@@ -19,10 +19,12 @@ body {
 }
 
 .titlebox {
-  margin: 41px 56px auto;
+  margin: 41px 56px;
   width: 100%;
-  height: 98px;
   background-color: inherit;
+}
+
+.titlebox h1 {
   color: white;
   font-weight: 500;
 }
@@ -35,11 +37,38 @@ body {
 }
 
 .columnheads {
-  margin: 0px 16px auto;
+  margin: 0px;
 }
 
 .columnheads h2 {
   float: left;
   margin: 1.66%;
+  padding: 1.66% 1.66%;
+  width: 30%;
+  font-weight: 700;
+}
+
+hr {
+  height: 1px;
+}
+
+.busline {
+  margin: 0px;
+}
+
+.busline h2 {
+  margin: 0px 10%;
+  padding: 2% 0px;
+  font-weight: 500;
+}
+
+.blines {
+  margin: 0px;
+}
+
+.blines h2 {
+  float: left;
+  margin: 1.66%;
+  padding: 1.66% 1.66%;
   width: 30%;
 }
