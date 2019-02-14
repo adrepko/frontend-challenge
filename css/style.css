@@ -4,47 +4,56 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url(https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700);
+  src: url(https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700);
 }
 
 body {
+  margin: 0 auto;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  background-color: #63C667;
+  background-color: #FFFFFF;
 }
 
 .container {
   margin: 0px auto;
+  height: 98px;
   width: 100%;
+  background-color: #63C667
 }
 
-.titlebox {
-  margin: 41px 56px;
+.container h1 {
+  padding: 41px 56px;
   width: 100%;
-  background-color: inherit;
-}
-
-.titlebox h1 {
   color: white;
   font-weight: 500;
 }
 
 .schedule {
   margin: 0px auto;
-  height: 437px;
+  height: 100%;
   width: 100%;
-  background-color: #FFFFFF;
+}
+
+.bschedule {
+  margin: 0px
+  padding: 0px 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bschedule:hover {
+  background-color: #b5becc;
 }
 
 .columnheads {
-  margin: 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.columnheads h2 {
-  float: left;
-  margin: 1.66%;
-  padding: 1.66% 1.66%;
-  width: 30%;
+.columnheads li {
+  margin: 0;
+  padding: 2.66% 16px 1% 16px;
   font-weight: 700;
 }
 
@@ -56,19 +65,58 @@ hr {
   margin: 0px;
 }
 
-.busline h2 {
-  margin: 0px 10%;
-  padding: 2% 0px;
-  font-weight: 500;
+h2 {
+  margin: 0px;
+  padding: 2% 16px;
+  font-weight: 300;
+  font-size: 12px;
+  background-color: #FFFFFF;
+  color: #757575;
+  text-transform: uppercase;
 }
 
 .blines {
   margin: 0px;
+  padding: 1.66% 60px 1.66% 16px;
+  line-height: 150%;
 }
 
-.blines h2 {
-  float: left;
-  margin: 1.66%;
-  padding: 1.66% 1.66%;
-  width: 30%;
+.freq {
+  margin: 0px;
+  padding: 1.66% 16px 1.66% 0px;
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 150%;
 }
+
+.dest {
+  padding: 1.66% 0px;
+  white-space: nowrap;
+  line-height: 150%;
+}
+
+.reroute {
+  color: red;
+}
+
+.reroute .freq {
+  font-weight: 400;
+}
+
+.oos {
+  color: grey;
+}
+
+.oos .freq {
+  font-weight: 400;
+}
+
+@media screen and (min-width: 575px){
+  body {
+    width: 80%;
+  }
+
+@media screen and (min-width: 991px){
+  body {
+    width: 70%;
+  }
