@@ -18,7 +18,7 @@ body {
   margin: 0px auto;
   height: 98px;
   width: 100%;
-  background-color: #63C667
+  background-color: #63C667;
 }
 
 .container h1 {
@@ -30,30 +30,57 @@ body {
 
 .schedule {
   margin: 0px auto;
+  padding: 0px;
   height: 100%;
   width: 100%;
 }
 
 .bschedule {
-  margin: 0px
-  padding: 0px 16px;
+  margin: 0px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
-.bschedule:hover {
+.bus {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.66%;
+}
+
+.number {
+  width: 50px;
+  padding-left: 16px;
+}
+
+.arrivaltime {
+  font-weight: 700;
+  width: 120px;
+}
+
+.nextarrival {
+  display: table;
+  font-weight: 300;
+  color: grey;
+  font-size: .8em;
+}
+
+.destination {
+  width: 160px;
+  white-space: nowrap;
+  padding-right: 16px;
+}
+
+.bus:hover {
   background-color: #b5becc;
 }
 
 .columnheads {
+  margin-top: 1.66%;
   display: flex;
   justify-content: space-between;
 }
 
 .columnheads li {
   margin: 0;
-  padding: 2.66% 16px 1% 16px;
   font-weight: 700;
 }
 
@@ -75,31 +102,11 @@ h2 {
   text-transform: uppercase;
 }
 
-.blines {
-  margin: 0px;
-  padding: 1.66% 60px 1.66% 16px;
-  line-height: 150%;
-}
-
-.freq {
-  margin: 0px;
-  padding: 1.66% 16px 1.66% 0px;
-  font-weight: 700;
-  white-space: nowrap;
-  line-height: 150%;
-}
-
-.dest {
-  padding: 1.66% 0px;
-  white-space: nowrap;
-  line-height: 150%;
-}
-
 .reroute {
   color: red;
 }
 
-.reroute .freq {
+.reroute .arrivaltime {
   font-weight: 400;
 }
 
@@ -107,16 +114,34 @@ h2 {
   color: grey;
 }
 
-.oos .freq {
+.oos .arrivaltime {
   font-weight: 400;
+}
+
+.header {
+  margin-bottom: -4px;
+  width: 100%;
+}
+
+.bottom {
+  margin: 0 auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 575px){
   body {
     width: 80%;
   }
+}
 
 @media screen and (min-width: 991px){
   body {
     width: 70%;
   }
+  .header {
+    display: none;
+  }
+  .bottom {
+    display: none;
+  }
+}

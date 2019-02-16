@@ -5,94 +5,85 @@
     <title>Frontend Challenge</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <img class = 'header' src="images/androidheader.png">
     <section class='container'>
         <h1>Stops/Washington & State</h1>
       </section>
       <section class = 'schedule'>
         <ul class="columnheads">
-          <li>Line</li>
-          <li>Destination</li>
-          <li>Frequency</li>
+          <li class = 'number'>Line</li>
+          <li class = 'arrivaltime'>Arrival Time</li>
+          <li class =  'destination'>Destination</li>
         </ul>
         <hr>
       </section>
         <h2>Eastbound</h2>
       <section class = 'bschedule'>
-        <ul class = "blines">
-          <li>60</li>
-          <li>124</li>
+        <ul class = 'bus'>
+          <li class = 'number'>60</li>
+          <li class = 'arrivaltime'>11:15am (4 min) <span class = 'nextarrival'>11:35am, 11:55am</span></li>
+          <li class = 'destination'>Randolph/Harbor Dr</li>
         </ul>
-        <ul class = "dest">
-          <li>Randol/Harbor Dr</li>
-          <li>Navy Pier</li>
-        </ul>
-        <ul class = 'freq'>
-          <li>Every 20 min</li>
-          <li>Every 10 min</li>
-        </ul>
+        <ul class = 'bus'>
+          <li class = 'number'>124</li>
+          <li class = 'arrivaltime'>11:17am (6 min) <span class = 'nextarrival'>11:27am, 11:37am</span></li>
+          <li class = 'destination'>Navy Pier</li>
       </section>
         <hr>
         <h2>Northbound</h2>
       <section class = 'bschedule'>
-        <ul class = "blines">
-          <li>151</li>
-        </ul>
-        <ul class = 'dest'>
-          <li>Devon/Clark</li>
-        </ul>
-        <ul class = 'freq'>
-          <li>Every 16 min</li>
+        <ul class = 'bus'>
+          <li class = 'number'>151</li>
+          <li class = 'arrivaltime'>11:12am (1 min) <span class = 'nextarrival'>11:28am, 11:44am</span></li>
+          <li class = 'destination'>Devon/Clark</li>
         </ul>
       </section>
         <hr>
         <h2>Southbound</h2>
       <section class = 'bschedule'>
-        <ul class = "blines">
-          <li>J14</li>
-          <li>124</li>
+        <ul class = 'bus'>
+          <li class = 'number'>J14</li>
+          <li class = 'arrivaltime'>11:20am (9 min) <span class = 'nextarrival'>11:35am, 11:50am</span></li>
+          <li class = 'destination'>103rd/Stony Island</li>
         </ul>
-        <ul class = "dest">
-          <li>103rd/Stony Island</li>
-          <li>Navy Pier</li>
-        </ul>
-        <ul class = "freq">
-          <li>Every 15 min</li>
-          <li>Every 10 min</li>
+        <ul class = 'bus'>
+          <li class = 'number'>124</li>
+          <li class = 'arrivaltime'>11:14am (3 min) <span class = 'nextarrival'>11:24am, 11:34am</span></li>
+          <li class = 'destination'>Navy Pier</li>
         </ul>
       </section>
       <hr>
       <h2>Reroute</h2>
       <section class = 'bschedule reroute'>
-        <ul class = 'blines'>
-          <li>6x</li>
-        </ul>
-        <ul class = 'dest'>
-          <li>Jackson Park Express</li>
-        </ul>
-        <ul class = 'freq'>
-          <li>Not Available</li>
+        <ul class = 'bus'>
+          <li class = 'number'>6x</li>
+          <li class = 'arrivaltime'>Not Available</li>
+          <li class = 'destination'>Jackson Park Exp.</li>
         </ul>
       </section>
       <hr>
       <h2>Out of service</h2>
       <section class = 'bschedule oos'>
-        <ul class = 'blines'>
-          <li>4</li>
-          <li>20</li>
-          <li>157</li>
+        <ul class = 'bus'>
+          <li class = 'number'>4</li>
+          <li class = 'arrivaltime'>12:10am</li>
+          <li class = 'destination'>Cottage Grove</li>
         </ul>
-        <ul class = 'dest'>
-          <li>Cottage Grove</li>
-          <li>Madison</li>
-          <li>Streeterville/Taylor</li>
+        <ul class = 'bus'>
+          <li class = 'number'>20</li>
+          <li class = 'arrivaltime'>12:10am</li>
+          <li class = 'destination'>Madison</li>
         </ul>
-        <ul class = 'freq'>
-          <li>Next: 12:10am</li>
-          <li>Next: 12:10am</li>
-          <li>Next: 6:00am</li>
+        <ul class = 'bus'>
+          <li class = 'number'>157</li>
+          <li class = 'arrivaltime'>6:00am</li>
+          <li class = 'destination'>Streeterville/Taylor</li>
         </ul>
+      </section>
+        <img class = 'bottom' src="images/androidbottom.png"
   </body>
 </html>
