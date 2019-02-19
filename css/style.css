@@ -16,16 +16,21 @@ body {
 
 .container {
   margin: 0px auto;
-  height: 98px;
+  height: 74px;
   width: 100%;
   background-color: #63C667;
+  display: flex;
+}
+
+.backwards {
+  padding: 26px 16px;
 }
 
 .container h1 {
-  padding: 41px 56px;
   width: 100%;
   color: white;
   font-weight: 500;
+  padding: 26px 16px;
 }
 
 .schedule {
@@ -43,7 +48,7 @@ body {
 .bus {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.66%;
+  padding: 18px 0px;
 }
 
 .number {
